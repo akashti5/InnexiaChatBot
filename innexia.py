@@ -91,11 +91,6 @@ async def chatpm(_, message):
     await type_and_send(message)
 
 
-@bot.on_message(filters.command("start") & ~filters.edited)
-async def startt(_, message):
-    await message.reply_text("Hi, I'm Alive ╮(. ❛ ᴗ ❛.)╭")
-
-
 async def main():
     global arq
     session = ClientSession()
